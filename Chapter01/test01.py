@@ -259,3 +259,41 @@ for datumn in DATA:
 ### match 18005551212
 ##1(?P=areacode)(?P=prefix)(?P=number)""",
 ##"(800) 555-1212 800-555-1212 18005551212")))
+
+##print(re.findall(r"\w+(?= van Rossum)", """
+##Guido van Rossum
+##Tim Peters
+##Alex Martelli
+##Just van Rossum
+##Raymond Hettinger
+##"""));
+##
+##print(re.findall(r"(?m)^\s+(?!noreply|postmaster)(\w+)", """
+##    sales@phptr.com
+##    postmaster@phptr.com
+##    eng@phptr.com
+##    noreply@phptr.com
+##    admin@phptr.com
+##"""));
+##
+##print(["%s@aw.com" % e.group(1) for e in re.finditer(r"(?m)^\s+(?!noreply|postmaster)(\w+)", """
+##    sales@phptr.com
+##    postmaster@phptr.com
+##    eng@phptr.com
+##    noreply@phptr.com
+##    admin@phptr.com
+##""")]);
+##
+##print(bool(re.search(r"(?:(x)|(y))(?(1)y|x)", "yx")));
+##print(bool(re.search(r"(?:(x)|(y))(?(1)y|x)", "xy")));
+
+##m = re.match("\bblow", "blow");
+##if m is not None:
+##    print(m.groups());
+##
+##m = re.match("\\bblow", "blow");
+##if m : print(m.group());
+##
+##m = re.match(r"\bblow", "blow");
+##if m : print(m.group())
+    
